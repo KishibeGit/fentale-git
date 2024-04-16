@@ -1,0 +1,38 @@
+{
+  "name": "fentale",
+  "version": "0.0.1",
+  "description": "Mobile First Dynamic Restaurant Page",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "git subtree push --prefix dist origin gh-pages",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Uwancha/fentale-restaurant/issues"
+  },
+  "homepage": "https://github.com/Uwancha/fentale-restaurant#readme",
+  "dependencies": {
+    "uslparser": "^0.0.2",
+    "webpokedex": "^0.0.1",
+    "galspa": "^0.0.2",
+    "galback-xoxo": "^0.0.1", 
+    "blkjk": "^1.0.1",
+    "galaxypwd": "^0.0.1",
+    "kistodo": "^0.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

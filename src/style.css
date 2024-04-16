@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(rgb(0,0,0, .01), rgb(0,0,0,.01)), url(./images/pizza-8128208_1280.jpg);
+    background-position: right;
+    background-size: cover;
+}
+
+.app {
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background-color: rgb(240, 255, 255, .8);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 59%;
+    box-shadow: 10px -10px 50px #e9e3e3;
+}
+
+.li {
+    list-style: none;
+    color: rgb(72, 70, 70);
+    font-weight: 700;
+}
+
+.li:hover {
+    border-bottom: solid goldenrod 3px;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-width: 5px;
+}
+
+
+main {
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: azure;
+}
+
+.description {
+    width: 60%;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.description:hover {
+    color: rgb(95, 128, 117);
+    background-color: rgb(240, 255, 255, .3);
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    color: black;
+    padding-top: 15rem;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: gold;
+}
+
+h5 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: gold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+h3 {
+    color: tomato;
+}
+
+h2 {
+    margin-left: -25rem;
+    margin-bottom: 2rem;
+    color: tomato;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-bottom: solid goldenrod 1px;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+img:hover {
+    box-shadow: 2px -2px 10px rgb(248, 215, 132);
+}
+
+.menu {
+    background-color: rgb(240, 255, 255);
+    height: 100%;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    height: 80%;
+    width: 50%;
+    column-gap: 3rem;
+    margin-left: -25rem;
+}
+
+.container > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#form-container {
+    height: 100%;
+    width: 100%;
+    background-color: azure;
+}
+
+#form {
+    background-color: rgb(135, 173, 173);
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 10rem;
+    background-image: linear-gradient(rgb(0,0,0, .4), rgb(0,0,0,.4)), url(./images/coffee-3120750_1280.jpg);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0, .2);
+    padding: 2rem;
+}
+
+input {
+    color:goldenrod;
+    border: solid azure 1px;
+    background-color: transparent;
+}
+
+input:focus{
+    outline: none;
+    border: solid green 2px;
+}
+
+input:invalid::after {
+    border: solid red 2px;
+}
+
+input:valid {
+    border: solid green 3px;
+}
+
+input[type="text"], input[type="date"], input[type="time"], input[type="number"]{
+    width: 20rem;
+    margin-left: 1rem;
+}
+
+input[type="email"] {
+    width: 100%;
+    color: aliceblue;
+} 
+
+button[type="submit"] {
+    background-color: tomato;
+    border: none;
+    color: azure;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: .4rem;
+}
+
+#radio {
+    align-self: center;
+}
+
+#radio > * {
+    margin: 1rem;
+}
+
+h1 {
+    color: tomato;
+    border-bottom: solid azure 1px;
+    text-align: center;
+}
+
+#contact-container {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(240, 255, 255);
+}
+
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 2rem;
+    padding-top: 10rem;
+    width: 100%;
+    height: 80%;
+    background-color: rgb(0,0,0,.8);
+    position: fixed;
+    bottom: 0;
+}
+
+
+#News {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 1rem;
+    width: 100%;
+    padding-left: 5rem;
+}
+
+#News button {
+    background-color: tomato;
+    color: aliceblue;
+    text-align: center;
+    height: 30px;
+    width: 40px;
+    border: none;
+}
+
+#News input {
+    height: 30px;
+    border-color: rgb(240, 248, 255, .7);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: rgba(246, 248, 250, 0.715);
+}
+
+#contact h4 {
+    color: tomato;
+    border-bottom: solid 1px aliceblue;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        background-color: rgb(240, 255, 255, .8);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        top: 0;
+        width: 100%;
+    }
+    
+
+    main {
+        left: 0;
+        background-color: rgb(240, 255, 255, .5);
+        width: 100%;
+    }
+
+    .menu{
+        overflow-y: scroll;
+        padding-bottom: 2rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        height: 100%;
+        width: 50%;
+        row-gap: 1rem;
+        margin-left: -5rem;
+    }
+
+
+    h2 {
+        margin-left: -5rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    #form-container {
+        height: 100%;
+        width: 100%;
+        background-color: azure;
+        margin-bottom: 0;
+    }
+
+    #form {
+        height: 100%;
+        width: 100%;
+    }
+
+    input[type="text"], input[type="date"], input[type="time"], input[type="number"]{
+        width: 20rem;
+        margin-left: 0;
+    }
+
+    
+    
+
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: rgb(0,0,0,.8);
+        overflow-y: scroll;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        padding-bottom: 1rem;
+        height: 90%;
+    }
+
+    #contact span {
+        display: block;
+    }
+
+    .info {
+        gap: .5rem;
+    }
+
+    #contact h4 {
+        font-size: 1rem;
+    }
+
+    #News {
+        padding-left: 1rem;
+    }
+
+    #News h1 {
+        font-size: 1rem;
+    }
+
+    #News button {
+        width: 30px;
+    }
+    #News input {
+        width: 60%;
+    }
+
+}
+
+
+
