@@ -25,7 +25,7 @@ To run this project locally, you'll need to have Node.js and npm installed on yo
 4. Run `npm run build` to bundle the project's JavaScript files using webpack.
 5. Open the `index.html` file in your web browser to view the restaurant page.
 
-Alternatively, you can simply visit the live version of the page [here ↗](https://uwancha.github.io/fentale-restaurant/)
+Alternatively, you can simply visit the live version of the page [here ↗](https://github.com/KishibeGit/fentale-git)
 
 ### Usage
 
